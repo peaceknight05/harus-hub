@@ -1,0 +1,76 @@
+@font-face {
+    font-family: CreatoDisplay-Medium;
+    src: url(assets/fonts/CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: CreatoDisplay-Regular;
+    src: url(assets/fonts/CreatoDisplay-Regular.otf);
+}
+
+body {
+    background-color: #d4edf5;
+    text-align: center;
+    font-family: CreatoDisplay-Regular, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: CreatoDisplay-Medium, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#image {
+    height: 225px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#question {
+    font-size: 20px;
+    margin-top: 60pt;
+    margin-bottom: 20pt;
+}
+
+#instruction {
+    font-size: 14px;
+    margin-top: 5pt;
+}
+
+#answer {
+    width: 10ch;
+    height: 1ch;
+    padding: 0.5ch 0.5ch;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5d4ed;
+    font-size: 20px;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    text-align: center;
+}
+
+#answer:focus {
+    outline: none;
+    border: 2px solid #ebabdc;
+    width: 12ch;
+    height: 1.5ch;
+}
+
+.sentence {
+    font-size: 24px;
+}
