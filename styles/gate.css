@@ -1,0 +1,65 @@
+@import "main.css";
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+#display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#image {
+    height: 225px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#question {
+    font-size: 20px;
+    margin-top: 60pt;
+    margin-bottom: 20pt;
+}
+
+#instruction {
+    font-size: 14px;
+    margin-top: 5pt;
+}
+
+#answer {
+    width: 10ch;
+    height: 1ch;
+    padding: 0.5ch 0.5ch;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--light-pink);
+    font-size: 20px;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    text-align: center;
+}
+
+#answer:focus {
+    outline: none;
+    border: 2px solid var(--pink);
+    width: 12ch;
+    height: 1.5ch;
+}
+
+.sentence {
+    font-size: 24px;
+}

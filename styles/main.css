@@ -44,3 +44,7 @@ p b {
 p b em, p em b {
     font-family: CreatoDisplay-MediumItalic, Helvetica, sans-serif;
 }
+
+.box {
+    background-color: cornflowerblue;
+}
