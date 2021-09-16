@@ -66,9 +66,9 @@ function stageTwo() {
 
 function redirect() {
     if (q == 2) {
-        window.location.replace("http://www.google.com");
+        window.location.href = "/links";
     } else {
-        window.location.replace("https://sonota.shouharuka.xyz")
+        window.location.replace("https://sonota.shouharuka.xyz");
     }
 }
 

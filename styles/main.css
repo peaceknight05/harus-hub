@@ -1,0 +1,46 @@
+@import "vars.css";
+
+@font-face {
+    font-family: CreatoDisplay-Medium;
+    src: url(../assets/fonts/CreatoDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: CreatoDisplay-Regular;
+    src: url(../assets/fonts/CreatoDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: CreatoDisplay-MediumItalic;
+    src: url(../assets/fonts/CreatoDisplay-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: CreatoDisplay-RegularItalic;
+    src: url(../assets/fonts/CreatoDisplay-RegularItalic.otf);
+}
+
+body {
+    background-color: var(--background);
+    font-family: CreatoDisplay-Regular, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: CreatoDisplay-Medium, Helvetica, sans-serif;
+}
+
+p {
+    font-family: CreatoDisplay-Regular, Helvetica, sans-serif;
+}
+
+p i, p em {
+    font-family: CreatoDisplay-RegularItalic, Helvetica, sans-serif;
+}
+
+p b {
+    font-family: CreatoDisplay-Medium, Helvetica, sans-serif;
+}
+
+p b em, p em b {
+    font-family: CreatoDisplay-MediumItalic, Helvetica, sans-serif;
+}
