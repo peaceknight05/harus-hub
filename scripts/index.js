@@ -59,7 +59,7 @@ function stageTwo() {
 
         if (ans.length == 0) return;
 
-        if (ans == words[choice]) q++;
+        if (ans.trim().toLowerCase() == words[choice]) q++;
         redirect();
     })
 }
