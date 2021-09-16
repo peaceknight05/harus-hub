@@ -68,7 +68,7 @@ function redirect() {
     if (q == 2) {
         window.location.href = "/links";
     } else {
-        window.location.replace("https://sonota.shouharuka.xyz");
+        window.location.href = "https://sonota.shouharuka.xyz";
     }
 }
 
