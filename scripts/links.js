@@ -1,3 +1,5 @@
+import { getCookie } from "./utils.js";
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -15,3 +17,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+var gate = document.getElementById("gate");
+var gateDocument = 'contentDocument' in gate ? gate.contentDocument : gate.contentWindow.document;
+if (getCookie("gate", gateDocument.cookie) != "true")
+    window.location.href = "../gate";

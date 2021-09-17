@@ -66,6 +66,7 @@ function stageTwo() {
 
 function redirect() {
     if (q == 2) {
+        document.cookie = "gate=true";
         window.location.href = "../links";
     } else {
         window.location.href = "https://sonota.shouharuka.xyz";
