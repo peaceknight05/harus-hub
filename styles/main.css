@@ -48,3 +48,7 @@ p b em, p em b {
 .box {
     background-color: cornflowerblue;
 }
+
+.invisible {
+    display: none;
+}
