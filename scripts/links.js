@@ -18,7 +18,5 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-var gate = document.getElementById("gate");
-var gateDocument = 'contentDocument' in gate ? gate.contentDocument : gate.contentWindow.document;
-if (getCookie("gate", gateDocument.cookie) != "true")
+if (getCookie("gate", document.cookie) != "true")
     window.location.href = "../gate";
