@@ -1,3 +1,5 @@
+import { getCookie, popup } from "./utils.js";
+
 const paths = ["assets/img/part1/a.png", "assets/img/part1/b.png", "assets/img/part1/c.png", "assets/img/part1/d.png", "assets/img/part1/e.png", "assets/img/part1/f.png", "assets/img/part1/g.png", "assets/img/part1/h.png", "assets/img/part1/i.png", "assets/img/part1/j.png", "assets/img/part1/k.png", "assets/img/part1/l.png"];
 const combis = [4,4,4,4,3,3,3,3,2,2,2,2];
 
@@ -73,4 +75,10 @@ function redirect() {
     }
 }
 
+if (getCookie("cheat") == "true") {
+    popup({type:"alert", content:"Nice try."});
+    document.cookie = "cheat=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+}
+if (getCookie("gate", document.cookie) == "true")
+    window.location.replace("../links");
 stageOne();

@@ -1,4 +1,4 @@
-import { getCookie } from "./utils.js";
+import { getCookie, popup } from "./utils.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -18,5 +18,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-if (getCookie("gate", document.cookie) != "true")
-    window.location.href = "../gate";
+if (getCookie("gate", document.cookie) != "true") {
+    document.cookie = "cheat=true";
+    window.location.replace("../gate");
+}
