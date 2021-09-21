@@ -1,4 +1,4 @@
-import { getCookie } from "./utils.js";
+import { getCookie, popup } from "./utils.js";
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
