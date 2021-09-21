@@ -75,7 +75,7 @@ function redirect() {
     }
 }
 
-if (getCookie("cheat") == "true") {
+if (getCookie("cheat", document.cookie) == "true") {
     popup({type:"alert", content:"Nice try."});
     document.cookie = "cheat=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
 }
