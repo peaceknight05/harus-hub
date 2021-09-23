@@ -199,6 +199,14 @@ nav a {
         margin: 2.5rem 0;
     }
 
+    li.nav-item {
+        border-bottom: #444;
+    }
+
+    li.nav-item.bottom {
+        border-bototm: none;
+    }
+
     .hamburger {
         display: block;
         cursor: pointer;
