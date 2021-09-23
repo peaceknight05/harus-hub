@@ -26,12 +26,6 @@ body {
     color: var(--near-black);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: CreatoDisplay-Medium, Helvetica, sans-serif;
 }
@@ -126,10 +120,15 @@ nav a {
 }
 
 .header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--blue);
 }
 
 .navbar {
+    margin: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,10 +136,15 @@ nav a {
 }
 
 .hamburger {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: none;
 }
 
 .bar {
+    padding: 0;
+    box-sizing: border-box;
     display: block;
     width: 25px;
     height: 3px;
@@ -151,16 +155,24 @@ nav a {
 }
 
 .nav-menu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-item {
+    padding: 0;
+    box-sizing: border-box;
     margin-left: 5rem;
 }
 
 .nav-link{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--dark-blue);
@@ -171,6 +183,9 @@ nav a {
 }
 
 .nav-title {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 2.1rem;
     font-weight: 500;
     color: var(--dark-purple);
@@ -178,6 +193,9 @@ nav a {
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         position: fixed;
         left: -100%;
         top: 5rem;
@@ -192,22 +210,36 @@ nav a {
     }
 
     .nav-menu.active {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         left: 0;
     }
 
     .nav-item {
+        padding: 0;
+        box-sizing: border-box;
         margin: 2.5rem 0;
     }
 
     li.nav-item {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         border-bottom: #444;
     }
 
     li.nav-item.bottom {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         border-bototm: none;
     }
 
     .hamburger {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         display: block;
         cursor: pointer;
     }
