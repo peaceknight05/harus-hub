@@ -26,6 +26,12 @@ body {
     color: var(--near-black);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: CreatoDisplay-Medium, Helvetica, sans-serif;
 }
@@ -86,12 +92,12 @@ p b em, p em b {
 }
 
 .toast.notification {
-    background-color: var(--pink); /* Red */
+    background-color: var(--pink);
     opacity: 1;
 }
 
 .toast.alert {
-    background-color: var(--red); /* Red */
+    background-color: var(--red);
     opacity: 1;
 }
 
@@ -106,7 +112,107 @@ p b em, p em b {
     transition: 0.3s;
 }
 
-  /* When moving the mouse over the close button */
+
 .closebtn:hover {
     color: var(--dark-purple);
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.header{
+    background-color: var(--blue);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--near-black);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.nav-link:hover{
+    color: var(--purple);
+}
+
+.nav-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--dark-purple);
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
