@@ -156,8 +156,15 @@ nav a {
     align-items: center;
 }
 
-.nav-item {
-    margin-left: 5rem;
+ul > .nav-item {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-right: 2px solid var(--dark-blue);
+}
+
+ul > .nav-item:last-child {
+    padding-right: 0rem;
+    border-right: none;
 }
 
 .nav-link{
@@ -201,7 +208,7 @@ nav a {
     }
 
     .nav-menu li {
-        border-bottom: 2px solid #777;
+        border-bottom: 2px solid var(--dark-blue);
     }
 
     .nav-menu li:last-child {
