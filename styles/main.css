@@ -222,6 +222,7 @@ nav a {
         margin: 2.5rem 0;
     }
 
+<<<<<<< HEAD
     li.nav-item {
         margin: 0;
         padding: 0;
@@ -236,6 +237,8 @@ nav a {
         border-bototm: none;
     }
 
+=======
+>>>>>>> parent of 39ec361 (fix tools links and add lines)
     .hamburger {
         margin: 0;
         padding: 0;
